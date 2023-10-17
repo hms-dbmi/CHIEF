@@ -1,5 +1,5 @@
-# CHIEF (Clinical Histopathology Imaging Evaluation Foundation Model
-)
+# CHIEF - Clinical Histopathology Imaging Evaluation Foundation Model
+
 
 ### A Generalizable Foundation Model for Quantitative Pathology Image Analyses 
 
