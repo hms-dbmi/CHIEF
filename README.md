@@ -1,7 +1,9 @@
 # CHIEF
 Clinical Histopathology Imaging Evaluation Foundation Model
 
-### A Generalizable Foundation Model for Quantitative Pathology Image Analyses by Wang. X, et al.
+### A Generalizable Foundation Model for Quantitative Pathology Image Analyses 
+
+by Wang. X, et al.
 
 #### ABSTRACT 
 Histopathology image evaluation is indispensable for cancer diagnoses and subtype evaluation. Previous stud-
