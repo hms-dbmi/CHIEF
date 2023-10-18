@@ -1,0 +1,37 @@
+General:
+    seed: 7
+    work_dir: WORK_DIR
+    fold_num: 4
+
+Data:
+    split_dir: SPLIT_DIR
+    data_dir: DATA_DIR_2  # for data with overlap
+    features_size: 768
+    n_classes: 2
+
+Model:
+    network: 'CHIEF'
+
+Train:
+    mode: repeat
+    lr: 3.0e-4
+    reg: 1.0e-5
+    CosineAnnealingLR:
+        T_max: 30
+        eta_min: 1.0e-7
+    Early_stopping:
+        patient: 10
+        stop_epoch: 30
+        type: max
+    max_epochs: 100
+    train_method: CHIEF
+    val_method: CHIEF
+    dataset: BagDataset
+
+
+Test:
+    TEST_SET_NAME:
+        data_dir: TEST_DATA_DIR
+        csv_path: TEST_SET_CSV_PATH
+
+
