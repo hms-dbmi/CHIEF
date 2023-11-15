@@ -34,6 +34,9 @@ scikit-learn==1.2.2,scikit-survival==0.21.0, scipy==1.8.0, tensorboardX==2.6.1, 
 2. sudo apt-get install openslide-tools
 3. pip install requirements.txt
 
+## Issues
+- Please open new threads to report all issues
+
 ## License
-This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
+CHIEF is made available under the GPLv3 License and is available for non-commercial academic purposes. 
 
