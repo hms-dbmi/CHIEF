@@ -29,7 +29,10 @@ cancer patients.*
 torchvision==0.9.1+cu111, h5py==3.6.0, matplotlib==3.5.2, numpy==1.22.3, opencv-python==4.5.5.64, openslide-python==1.3.0, pandas==1.4.2, Pillow==10.0.0, scikit-image==0.21.0
 scikit-learn==1.2.2,scikit-survival==0.21.0, scipy==1.8.0, tensorboardX==2.6.1, tensorboard==2.8.0.
 
-
+### Installation Guide for Linux (using anaconda)
+1. Installation anaconda(https://www.anaconda.com/distribution/)
+2. sudo apt-get install openslide-tools
+3. pip install requirements.txt
 
 ## License
 This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
