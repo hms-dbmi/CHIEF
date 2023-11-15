@@ -31,8 +31,21 @@ scikit-learn==1.2.2,scikit-survival==0.21.0, scipy==1.8.0, tensorboardX==2.6.1, 
 
 ### Installation Guide for Linux (using anaconda)
 1. Installation anaconda(https://www.anaconda.com/distribution/)
+```
 2. sudo apt-get install openslide-tools
+```
+```
 3. pip install requirements.txt
+```
+### Data Preparation
+
+Our CTransPath is used to encode each raw image patch into a feature vector.
+
+
+### Evaluation 
+
+
+
 
 ## Issues
 - Please open new threads to report all issues
