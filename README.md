@@ -197,6 +197,10 @@ cd Tasks/survial
 
 run inference.ipynb
 ```
+## Reference
+
+* [SupContrast: Supervised Contrastive Learning](https://github.com/HobbitLong/SupContrast)
+* [CLAM](https://github.com/mahmoodlab/CLAM)
 
 
 ## Issues
