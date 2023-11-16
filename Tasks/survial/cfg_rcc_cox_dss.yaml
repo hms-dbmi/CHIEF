@@ -1,0 +1,45 @@
+General:
+    result_dir: &result_dir ./results/
+    fold_num: 5
+    seed: &seed 2023
+    exp_type: cross_validation #cross_validation
+    external_eval: False
+    drop_slides: False
+
+Data:
+    use_clinical: False
+    time_v: &time dss
+    loss: &loss cox
+    pp: &pp rcc
+    project: &p !join [tcga_, *pp]
+    n_classes: 2
+    dataset_name: SurvivalBagDataset
+    data_dir: ./features/
+    split_dir: ./csvs/cross_validation_splits
+
+
+Model:
+    model_type: stable
+    model_name: CHIEF_survival
+    size_arg: small
+    logits_field: bag_logits
+Train:
+    optimizer: Adam
+    reg: 1.0e-5
+    lr: 3.0e-4
+    max_epochs: 100
+    train_function: !join [survival_, *loss]
+    val_function: !join [survival_, *loss, _multi]
+    CosineAnnealingLR:
+        T_max: 50
+        eta_min: 1.0e-6
+    Early_stopping:
+        type: cindex
+        patient: 10
+        stop_epoch: 30
+    batch_size : 32
+    num_worker: 8
+    is_augment: True
+    balance: True
+    train_set_size: 400
+

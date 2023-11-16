@@ -39,15 +39,15 @@ scikit-learn==1.2.2,scikit-survival==0.21.0, scipy==1.8.0, tensorboardX==2.6.1, 
 ```
 ### Step 1 Data Preparation
 1.Download data
-* [TCGA](https://portal.gdc.cancer.gov/projects?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22projects.program.name%22%2C%22value%22%3A%5B%22TCGA%22%5D%7D%7D%5D%7D),[CPTAC](https://portal.gdc.cancer.gov/projects?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22projects.program.name%22%2C%22value%22%3A%5B%22TCGA%22%5D%7D%7D%5D%7D),[Panda](https://www.kaggle.com/competitions/prostate-cancer-grade-assessment/data),
-[DiagSet](https://github.com/michalkoziarski/DiagSet).
+* [TCGA](https://portal.gdc.cancer.gov/projects?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22projects.program.name%22%2C%22value%22%3A%5B%22TCGA%22%5D%7D%7D%5D%7D), [CPTAC](https://portal.gdc.cancer.gov/projects?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22projects.program.name%22%2C%22value%22%3A%5B%22TCGA%22%5D%7D%7D%5D%7D), [Panda](https://www.kaggle.com/competitions/prostate-cancer-grade-assessment/data),
+ [DiagSet](https://github.com/michalkoziarski/DiagSet), and so on.
 
 
 2.Get tiles embeddings
 ```
 python3 get_feature.py
 ```
-You need to process the WSI into the following format
+You need to process the WSI into the following format.Here some [examples]()
 ```
 DATA_DIR
 ├─patch_coord
@@ -176,7 +176,7 @@ Please add information about the test set in the config, like this
 ```yaml
 Test:
     TEST_SET_NAME:
-        data_dir: TEST_DATA_DIR_1 
+        data_dir: TEST_DATA_DIR
         csv_path: TEST_SET_CSV_PATH
 ```
 
@@ -188,7 +188,15 @@ python eval.py --config_path [config path] --dataset_name [TEST_SET_NAME]
 
 Test result will save at `WORK_DIR/CONFIG_FILE_NAME/results/TEST_SET_NAME`
 
+## Reproducibility
 
+Below we provide a quick example using a subset of cases for RCC survival task.
+
+```shell
+cd Tasks/survial
+
+run inference.ipynb
+```
 
 
 ## Issues
