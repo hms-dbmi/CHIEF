@@ -3,7 +3,7 @@
 
 ### A Generalizable Foundation Model for Quantitative Pathology Image Analyses 
 
-by Wang. X, et al.
+by Wang. X, Zhao. J. et al.
 
 #### ABSTRACT 
 *Histopathology image evaluation is indispensable for cancer diagnoses and subtype classification. Standard
@@ -18,7 +18,8 @@ state-of-the-art deep learning methods by up to 36.1% in these digital pathology
 ability to address domain shifts observed in samples from diverse populations and processed by different slide
 preparation methods. CHIEF provides a generalizable foundation for efficient digital pathology evaluation for
 cancer patients.*
-![main figure](https://github.com/hms-dbmi/CHIEF/assets/31292151/022b0829-6e3c-4ffa-92a0-645622949fab)
+
+![Github-Cover](https://github.com/hms-dbmi/CHIEF/assets/31292151/442391e2-3706-4337-ae9a-69c2cc24222e)
 
 © This code is made available for non-commercial academic purposes. 
 
