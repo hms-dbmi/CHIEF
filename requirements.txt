@@ -42,7 +42,7 @@ exhaustive-weighted-random-sampler==0.0.2
 fastjsonschema==2.15.3
 filelock==3.12.2
 flatbuffers==2.0
-fonttools==4.33.3
+fonttools==4.43.0
 formulaic==0.6.4
 fsspec==2023.6.0
 future==0.18.3
