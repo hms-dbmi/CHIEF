@@ -206,6 +206,9 @@ cd Tasks/survial
 
 run inference.ipynb
 ```
+Docker images are available at https://hub.docker.com/r/chiefcontainer/chief/
+
+Attention-based heatmaps can be viewed at https://yulab.hms.harvard.edu/projects/CHIEF/CHIEF.htm
 ## Reference
 
 * [SupContrast: Supervised Contrastive Learning](https://github.com/HobbitLong/SupContrast)
