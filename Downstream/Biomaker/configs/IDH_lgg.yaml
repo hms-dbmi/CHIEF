@@ -1,0 +1,34 @@
+General:
+    result_dir: ./IDH_LGG
+    fold_num: 10
+    seed: 2023
+
+Data:
+    n_classes: 2
+    data_dir: ./feature/muv
+    external_dir: ./csv/lgg_muv.csv
+
+Model:
+    model_name: CHIEF
+    size_arg: small
+    logits_field: bag_logits
+Train:
+    optimizer: Adam
+    reg: 1.0e-5
+    lr: 3.0e-4
+    max_epochs: 50
+    train_function: CHIEF_biomaker
+    val_function: Embedding
+    CosineAnnealingLR:
+        T_max: 50
+        eta_min: 1.0e-6
+    Early_stopping:
+        type: auc
+        patient: 5
+        stop_epoch: 10
+    batch_size : 32
+    num_worker: 16
+    is_augment: True
+    balance: True
+    train_set_size: 400
+

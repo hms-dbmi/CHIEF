@@ -1,0 +1,10 @@
+General:
+    result_dir: ./wsi_level_feature
+
+Data:
+    data_dir: ./Downstream/Tumor_origin/src/feature/tcga/
+    external_dir: ./exsample_csv/test_tcga.csv
+    anatomic: 13
+
+
+

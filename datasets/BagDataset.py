@@ -1,5 +1,6 @@
 import os
 
+import h5py
 import torch
 import numpy as np
 import pandas as pd
@@ -7,40 +8,28 @@ from torch.utils.data import Dataset
 
 
 class BagDataset(Dataset):
-    def __init__(self, df, data_dir, return_idx=False):
+    def __init__(self, df, data_dir,anatomic, **kwargs):
         super(BagDataset, self).__init__()
 
         self.data_dir = data_dir
         self.df = df
-        self.rt_idx = return_idx
-
+        self.anatomic = anatomic
     def __len__(self):
         return len(self.df.values)
 
     def __getitem__(self, idx):
-        label = self.df['label'].values[idx]
 
-        slide_id = self.df['slide_id'].values[idx]
+        slide_id = str(self.df['case_id'].values[idx])
+        full_path = os.path.join(self.data_dir, slide_id + '.pt')
 
-        # load from pt files
-        if not slide_id.endswith('.pt'):
-            slide_id = slide_id + '.pt'
-        if 'feature_path' in self.df.columns:
-            full_path = self.df['feature_path'].values[idx]
-        else:
-            if os.path.exists(os.path.join(self.data_dir, 'patch_feature')):
-                full_path = os.path.join(self.data_dir, 'patch_feature', slide_id)
-            else:
-                full_path = os.path.join(self.data_dir, slide_id)
         features = torch.load(full_path, map_location=torch.device('cpu'))
 
         res = {
-            'features': features,
-            'label': torch.tensor([label])
+            'x': features,
+            'z': torch.tensor([self.anatomic]),
+            'id':slide_id
         }
 
-        if self.rt_idx:
-            res['idx'] = idx
 
         return res
 
@@ -63,3 +52,5 @@ class BagDataset(Dataset):
     def get_data_df(self):
         return self.df
 
+    def get_id_list(self):
+        return self.df['case_id'].values
