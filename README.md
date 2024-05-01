@@ -190,6 +190,11 @@ run inference.ipynb
 ```
 
 Docker images are available at https://hub.docker.com/r/chiefcontainer/chief/
+```shell
+docker pull chiefcontainer/chief:v1
+docker run --rm -it --entrypoint /bin/bash chiefcontainer/chief:v1
+```
+You will see a CHIEF folder under "root".
 
 Attention-based heatmaps can be viewed at https://yulab.hms.harvard.edu/projects/CHIEF/CHIEF.htm
 
