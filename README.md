@@ -24,6 +24,11 @@ Docker images (model weights) are available at https://hub.docker.com/r/chiefcon
 torchvision==0.9.1+cu111, h5py==3.6.0, matplotlib==3.5.2, numpy==1.22.3, opencv-python==4.5.5.64, openslide-python==1.3.0, pandas==1.4.2, Pillow==10.0.0, scikit-image==0.21.0
 scikit-learn==1.2.2,scikit-survival==0.21.0, scipy==1.8.0, tensorboardX==2.6.1, tensorboard==2.8.0.
 
+Install the modified [timm](https://drive.google.com/file/d/1JV7aj9rKqGedXY1TdDfi3dP07022hcgZ/view?usp=sharing) library
+```
+pip install timm-0.5.4.tar
+```
+
 ### Installation Guide for Linux (using anaconda)
 1. Installation anaconda(https://www.anaconda.com/distribution/)
 ```
@@ -40,7 +45,7 @@ cd CHIEF
 ```
 
 Downloading Pre-trained models
-Request access to the model [weights](). The docker images are already included and do not need to be downloaded.
+Request access to the model [weights](https://drive.google.com/drive/folders/1uRv9A1HuTW5m_pJoyMzdN31bE1i-tDaV?usp=sharing). The docker images are already included and do not need to be downloaded.
 ## Creating model
 ### Patch-level model(CHIEF-Ctranspath)
 using the commands below:
