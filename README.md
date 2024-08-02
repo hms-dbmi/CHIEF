@@ -7,6 +7,7 @@
 
 Wang X^, Zhao J^, Marostica E, Yuan W, Jin J, Zhang J, Li R, Tang H, Wang K, Li Y, Wang F, Peng Y, Zhu J, Zhang J, Jackson CR, Zhang J, Dillon D, Lin NU, Sholl L, Denize T, Meredith D, Ligon KL, Signoretti S, Ogino S, Golden JA, Nasrallah MP, Han X, Yang S<sup>+</sup>, Yu KH<sup>+</sup>.
 
+^ Equal contribution
 *Lead Contact: Kun-Hsing Yu, M.D., Ph.D.*
 
 #### ABSTRACT 
@@ -91,7 +92,7 @@ Here's an example.
 python3 Get_CHIEF_patch_feature.py
 ````
 ### WSI-level model(CHIEF)
-There are already some extracted features for the patch images, please [download]() them first.Put it under `./Downstream/Tumor_origin/src/feature`. The docker images are already included and do not need to be downloaded.
+There are already some extracted features for the patch images, please [weights](https://drive.google.com/drive/folders/1uRv9A1HuTW5m_pJoyMzdN31bE1i-tDaV?usp=sharing) them first.Put it under `./Downstream/Tumor_origin/src/feature`. The docker images are already included and do not need to be downloaded.
 
 ````
 import torch, torchvision
