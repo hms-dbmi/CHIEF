@@ -5,7 +5,6 @@ import csv
 import numpy as np
 from tqdm import tqdm
 import torch.nn as nn
-from losses.losses import NLLSurvLoss, CoxSurvLoss, CrossEntropySurvLoss
 ## metrics
 from sklearn.metrics import roc_auc_score, f1_score, precision_score, recall_score, accuracy_score
 from sksurv.metrics import concordance_index_censored
@@ -18,7 +17,6 @@ def evaluation(index, model, loader, result_dir, cfg, gc=16):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.eval()
-    loss_fn = CoxSurvLoss()
     mode = 'cox'
     survive_time_all = []
     status_all = []
@@ -49,9 +47,6 @@ def evaluation(index, model, loader, result_dir, cfg, gc=16):
             if iter_%gc==0 or idx == len(loader)-1:
                 survive_time_all = np.asarray(survive_time_all)
                 status_all = np.asarray(status_all)
-                loss_surv = loss_fn(pred_each, survive_time_all, status_all)
-                loss = loss_surv
-                val_loss += loss.item()
                 #bar.update(gc)
                 pred_each = None
                 survive_time_all = []
