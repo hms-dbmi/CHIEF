@@ -3,9 +3,11 @@
 
 ### A Pathology Foundation Model for Cancer Diagnosis and Prognosis Prediction
 
-(Nature. 2024. In press)
-
 Wang X^, Zhao J^, Marostica E, Yuan W, Jin J, Zhang J, Li R, Tang H, Wang K, Li Y, Wang F, Peng Y, Zhu J, Zhang J, Jackson CR, Zhang J, Dillon D, Lin NU, Sholl L, Denize T, Meredith D, Ligon KL, Signoretti S, Ogino S, Golden JA, Nasrallah MP, Han X, Yang S<sup>+</sup>, Yu KH<sup>+</sup>.
+
+
+Nature (2024).
+https://www.nature.com/articles/s41586-024-07894-z
 
 *Lead Contact: Kun-Hsing Yu, M.D., Ph.D.*
 
