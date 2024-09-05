@@ -16,7 +16,10 @@ https://www.nature.com/articles/s41586-024-07894-z
 
 ![Github-Cover](https://github.com/hms-dbmi/CHIEF/assets/31292151/442391e2-3706-4337-ae9a-69c2cc24222e)
 
-Docker images (model weights) are available at https://hub.docker.com/r/chiefcontainer/chief/
+
+
+#### 👑👑👑 Encoding one WSI as one feature representation.
+Many downstream clinical applications (e.g., survival analysis, drug discovery, and the identification of unknown subtypes via unsupervised clustering), rely on encoding a single feature that effectively represents an entire slide. Therefore, in addition to patch-level (region-of-interest) encoding, CHIEF also focuses on whole slide image (WSI)-level embedding without fine-tuning the tile aggregator. Docker images (model weights) are available at https://hub.docker.com/r/chiefcontainer/chief/
 
 
 ## Pre-requisites:
@@ -92,7 +95,7 @@ Here's an example.
 ````
 python3 Get_CHIEF_patch_feature.py
 ````
-### WSI-level model(CHIEF)
+### WSI-level model(CHIEF) 
 There are already some extracted features for the patch images, please [weights](https://drive.google.com/drive/folders/1uRv9A1HuTW5m_pJoyMzdN31bE1i-tDaV?usp=sharing) them first.Put it under `./Downstream/Tumor_origin/src/feature`. The docker images are already included and do not need to be downloaded.
 
 ````
