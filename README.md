@@ -18,7 +18,7 @@ https://www.nature.com/articles/s41586-024-07894-z
 
 
 
-#### 👑👑👑 Encoding one WSI as one feature representation.
+## 👑👑👑 Encoding one WSI as one feature representation.
 Many downstream clinical applications (e.g., survival analysis, drug discovery, and the identification of unknown subtypes via unsupervised clustering), rely on encoding a single feature that effectively represents an entire slide. Therefore, in addition to patch-level (region-of-interest) encoding, CHIEF also focuses on whole slide image (WSI)-level embedding without fine-tuning the tile aggregator. Docker images (model weights) are available at https://hub.docker.com/r/chiefcontainer/chief/
 
 
