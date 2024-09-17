@@ -202,13 +202,6 @@ We thank the authors and developers for their contribution as below.
 * [CLAM](https://github.com/mahmoodlab/CLAM)
 * [multimodal-cancer-origin-prediction](https://github.com/mahmoodlab/multimodal-cancer-origin-prediction)
 
-## Update
-
-We would like to clarify that the work was actually submitted in early 2023. This is an extension of our **Ctranspath** work, at that time there were almost no foundation models, so we mainly propose a concept of whole-slide training, focusing on multi-center, large-scale data validation. The revision process took a long time before it was finally accepted in 2024.
-
-
-If you want **stronger patch-level features**, our latest work on multimodal foundation mode([MUSK](https://github.com/lilab-stanford/MUSK)) is currently under review, which shows improved performance compared to the **SOTA (CONCH,UNI,...)** of 2024. Our latest work focuses on obtaining stronger features for patch-level.
-
 
 ## Issues
 - Please open new threads or address all questions to xiyue.wang.scu@gmail.com or Kun-Hsing_Yu@hms.harvard.edu
