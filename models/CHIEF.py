@@ -118,6 +118,7 @@ class CHIEF(nn.Module):
 
     def forward(self, h, x_anatomic):
         batch = x_anatomic
+        h_ori = h
         A, h = self.attention_net(h)
         A = torch.transpose(A, 1, 0)
         A_raw = A
@@ -126,6 +127,7 @@ class CHIEF(nn.Module):
         embed_batch = self.organ_embedding[batch]
         embed_batch=self.text_to_vision(embed_batch)
         WSI_feature = torch.mm(A, h)
+        slide_embeddings = torch.mm(A, h_ori)
 
         M = WSI_feature+embed_batch
 
@@ -134,7 +136,7 @@ class CHIEF(nn.Module):
         result = {
             'bag_logits': logits,
             'attention_raw': A_raw,
-            'WSI_feature': WSI_feature,
+            'WSI_feature': slide_embeddings,
             'WSI_feature_anatomical': M
         }
         return result
