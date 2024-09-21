@@ -189,8 +189,8 @@ run inference.ipynb
 
 
 ```shell
-docker pull chiefcontainer/chief:v1
-docker run --rm -it --entrypoint /bin/bash chiefcontainer/chief:v1
+docker pull chiefcontainer/chief:v1.11
+docker run --rm -it --entrypoint /bin/bash chiefcontainer/chief:v1.11
 ```
 You will see a CHIEF folder under "root".
 
