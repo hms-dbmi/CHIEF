@@ -16,6 +16,6 @@ anatomical=13
 with torch.no_grad():
     x,tmp_z = features,anatomical
     result = model(x, torch.tensor([tmp_z]))
-    wsi_feature_emb = result['WSI_feature']  ###[1,512]
+    wsi_feature_emb = result['WSI_feature']  ###[1,768]
     print(wsi_feature_emb.size())
 
