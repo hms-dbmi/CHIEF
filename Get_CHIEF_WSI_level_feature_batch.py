@@ -31,7 +31,7 @@ with torch.no_grad():
             x, tmp_z,id = batch['x'].to(device, dtype=torch.float32), \
                 batch['z'].to(device, dtype=torch.long),batch['id']
             result = model(x, x_anatomic=tmp_z)
-            wsi_feature_emb = result['WSI_feature']  ###[1,512]
+            wsi_feature_emb = result['WSI_feature']  ###[1,768]
             print(wsi_feature_emb.size())
             torch.save(wsi_feature_emb, os.path.join(result_dir,id+'.pt'))
 
