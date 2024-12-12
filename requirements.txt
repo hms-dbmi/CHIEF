@@ -73,7 +73,7 @@ jsonschema==4.4.0
 jupyter-client==7.3.0
 jupyter-core==4.10.0
 jupyter-server==1.17.0
-jupyterlab==3.3.4
+jupyterlab==3.6.7
 jupyterlab-language-pack-zh-CN==3.3.post3
 jupyterlab-pygments==0.2.2
 jupyterlab-server==2.13.0
