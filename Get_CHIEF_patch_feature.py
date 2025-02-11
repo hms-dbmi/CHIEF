@@ -17,8 +17,8 @@ trnsfrms_val = transforms.Compose(
 
 model = ctranspath()
 model.head = nn.Identity()
-td = torch.load(r'./model_weight/CHIEF_CTransPath.pth')
-model.load_state_dict(td['model'], strict=True)
+td = torch.load(r'/Users/sidharthrs/Desktop/CHIEF/CHIEF_CTransPath.pth')
+model.load_state_dict(td['model'], strict=False)
 model.eval()
 
 

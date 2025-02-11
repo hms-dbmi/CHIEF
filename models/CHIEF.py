@@ -106,7 +106,7 @@ class CHIEF(nn.Module):
         self.text_to_vision=nn.Sequential(nn.Linear(768, size[1]), nn.ReLU(), nn.Dropout(p=0.25))
 
         self.register_buffer('organ_embedding', torch.randn(19, 768))
-        word_embedding = torch.load(r'./model_weight/Text_emdding.pth')
+        word_embedding = torch.load(r'./Text_emdding.pth')
         self.organ_embedding.data = word_embedding.float()
         self.text_to_vision=nn.Sequential(nn.Linear(768, size[1]), nn.ReLU(), nn.Dropout(p=0.25))
 
