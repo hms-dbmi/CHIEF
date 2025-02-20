@@ -22,6 +22,21 @@ https://www.nature.com/articles/s41586-024-07894-z
 Many downstream clinical applications (e.g., survival analysis, drug discovery, and the identification of unknown subtypes via unsupervised clustering), rely on encoding a single feature that effectively represents an entire slide. Therefore, in addition to patch-level (region-of-interest) encoding, CHIEF also focuses on whole slide image (WSI)-level embedding without fine-tuning the tile aggregator. Docker images (model weights) are available at https://hub.docker.com/r/chiefcontainer/chief/
 
 
+### ⚡️⚡️⚡️ Applications Empowered by CHIEF.
+We support a collaborative community effort to implement CHIEF across various applications, including but not limited to digital pathology. Below is a continuously updated list of published works that have utilized CHIEF in different contexts with a particular emphasis on the WSI-level feature we highlighted.
+
+* Efficient Pathology Image Analysis
+Peter Neidlinger et al, **A deep learning framework for efficient pathology image analysis** (2025) 
+https://arxiv.org/abs/2502.13027
+
+* Multi-omics & Virtual Staining
+Zongxiao Li et al, **His-MMDM: Multi-domain and Multi-omics Translation of Histopathological Images with Diffusion Models** (2025)
+https://www.medrxiv.org/content/10.1101/2024.07.11.24310294v1
+
+* Treatment Response and Survival Analysis
+Yuteng Pan et al, **Multi-omics models for predicting prognosis in non-small cell lung cancer patients following chemotherapy and radiotherapy: A multi-center study**, _Radiotherapy and Oncology_ (2025)
+
+
 ## Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
 * NVIDIA GPU (Tested on Nvidia GeForce V100 x 32GB)
