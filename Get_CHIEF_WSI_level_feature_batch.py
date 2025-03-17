@@ -6,6 +6,10 @@ from utils.utils import read_yaml
 import argparse
 from tqdm import tqdm
 import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--config_path', type=str, default='./configs/get_wsi_level_feature_exsample.yaml')
 parser.add_argument('--dataset_name', type=str, default='test_set')
@@ -17,7 +21,7 @@ result_dir = os.path.join(cfg.General.result_dir,'WSI_level_feature', args.datas
 os.makedirs(result_dir, exist_ok=True)
 model = CHIEF(size_arg="small", dropout=True, n_classes=2)
 model=model.cuda()
-td = torch.load(r'./model_weight/CHIEF_pretraining.pth')
+td = torch.load(r'./CHIEF_pretraining.pth')
 model.load_state_dict(td, strict=True)
 model.eval()
 
