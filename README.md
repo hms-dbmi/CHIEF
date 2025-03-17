@@ -36,6 +36,12 @@ We support a collaborative community effort to implement CHIEF across various ap
 >Yuteng Pan et al, **Multi-omics models for predicting prognosis in non-small cell lung cancer patients following chemotherapy and radiotherapy: A multi-center study**, _Radiotherapy and Oncology_ (2025)
 
 
+* Medical Image Re-identification
+> Yuan Tian et al, **Towards All-in-One Medical Image Re-Identification** _CVPR_ (2025)
+https://arxiv.org/pdf/2503.08173
+
+
+
 ## Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
 * NVIDIA GPU (Tested on Nvidia GeForce V100 x 32GB)
