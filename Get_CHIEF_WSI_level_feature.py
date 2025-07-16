@@ -5,7 +5,7 @@ from models.CHIEF import CHIEF
 
 model = CHIEF(size_arg="small", dropout=True, n_classes=2)
 
-td = torch.load(r'./model_weight/CHIEF_pretraining.pth')
+td = torch.load(r'./CHIEF_pretraining.pth', map_location=torch.device('cpu'))
 model.load_state_dict(td, strict=True)
 model.eval()
 
