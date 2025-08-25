@@ -15,7 +15,7 @@ beautifulsoup4==4.11.1
 bleach==5.0.0
 blinker==1.4
 cachetools==5.0.0
-certifi==2021.10.8
+certifi==2023.7.22
 cffi==1.15.0
 chardet==3.0.4
 charset-normalizer==2.0.12
