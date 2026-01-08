@@ -25,6 +25,11 @@ Many downstream clinical applications (e.g., survival analysis, drug discovery, 
 ### ⚡️⚡️⚡️ Applications Empowered by CHIEF.
 We support a collaborative community effort to implement CHIEF across various applications, including but not limited to digital pathology. Below is a continuously updated list of published works that have utilized CHIEF in different contexts with a particular emphasis on the WSI-level feature we highlighted.
 
+* Generablizablity for Cryosection Pathology (biopsy and intraoperative frozen section examination)
+
+>Yifan Yuan et al, **AI-augmented intraoperative decision-making workflows in diffuse midline glioma biopsy using cryosection pathology** (2025) _Nature Communications_ (2025; Editors' Highlights)
+https://www.nature.com/articles/s41467-025-66853-y
+
 * Efficient Pathology Image Analysis
 
 >Peter Neidlinger et al, **A deep learning framework for efficient pathology image analysis** (2025) https://arxiv.org/abs/2502.13027
